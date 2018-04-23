@@ -1,0 +1,109 @@
+@import '../Core/Nord.scss';
+
+.Code {
+  background-color: $nord0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 15px;
+  overflow-x: auto;
+  position: relative;
+
+  .Copy {
+    color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .Copied {
+    align-items: center;
+    animation: fade 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    span {
+      background-color: $nord14;
+      border-radius: 4px;
+      display: block;
+      padding: 8px;
+    }
+
+    @keyframes fade {
+      0%,100% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    .Copy {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .Lines {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    justify-content: flex-end;
+    margin: 16px 0px;
+    padding: 0px 20px 0px 0px;
+    user-select: none;
+
+    .Line {
+      color: lighten($nord2, 10%);
+      flex: 1;
+      font-family: 'Source Code Pro';
+      font-size: 12px;
+      font-weight: 100;
+      justify-content: center;
+      line-height: 1.5em;
+    }
+  }
+
+  .Source {
+    display: flex;
+    flex-direction: column;
+
+    pre {
+      code {
+        line-height: 1.5em;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.code {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: $nord10;
+  display: inline-block;
+  padding: 0px 8px 0px 8px;
+  font-family: 'Source Code Pro';
+  font-size: 12px;
+  line-height: 2em;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+}

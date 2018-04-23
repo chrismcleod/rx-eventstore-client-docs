@@ -1,0 +1,67 @@
+{
+  "linterOptions": {
+    "exclude": [
+      ".vscode/**",
+      "config/**",
+      "node_modules/**",
+      "public/**",
+      "scripts/**"
+    ]
+  },
+  "extends": [
+    "tslint-react",
+    "tslint-config-airbnb",
+    "tslint-eslint-rules"
+  ],
+  "rules": {
+    "align": false,
+    "array-bracket-spacing": true,
+    "block-spacing": true,
+    "jsx-curly-spacing": true,
+    "import-name": false,
+    "import-spacing": true,
+    "interface-name": false,
+    "max-line-length": {
+      "options": [
+        1000
+      ]
+    },
+    "jsx-no-multiline-js": false,
+    "no-console": false,
+    "object-curly-spacing": true,
+    "object-literal-sort-keys": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "named-imports-order": "lowercase-last",
+        "grouped-imports": true
+      }
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "no-submodule-imports": false,
+    "variable-name": {
+      "options": [
+        "allow-leading-underscore",
+        "allow-pascal-case"
+      ]
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-module",
+        "check-operator",
+        "check-preblock",
+        "check-rest-spread",
+        "check-separator",
+        "check-type",
+        "check-type-operator",
+        "check-typecast"
+      ]
+    }
+  }
+}

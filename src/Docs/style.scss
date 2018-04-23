@@ -1,0 +1,52 @@
+@import '../Core/Nord.scss';
+
+.Doc {
+  hr {
+    border: 0;
+    border-top: 1px solid darken($nord6, 5%);
+    height: 1px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Raleway';
+  }
+
+  h1 {
+    border-bottom: 1px solid $nord4;
+    color: $nord2;
+    margin: 30px 30px 0px 30px;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    color: $nord10;
+    margin: 30px;
+  }
+
+  h3 {
+    color: $nord9;
+    font-weight: 500;
+    margin: 30px 0px 15px 30px;
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin: 0px 30px 0px 30px;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    color: $nord15;
+    text-decoration: none;
+  }
+
+  .Code {
+    margin: 30px;
+  }
+}

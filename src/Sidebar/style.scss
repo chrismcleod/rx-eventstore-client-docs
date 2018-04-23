@@ -1,0 +1,8 @@
+@import '../Core/Nord.scss';
+
+#Sidebar {
+  background-color: $nord4;
+  box-shadow: 1px 0px 1px 0px lighten($nord0, 55%);
+  min-height: 100vh;
+  z-index: 1;
+}

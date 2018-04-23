@@ -1,0 +1,43 @@
+@import '../../Core/Nord.scss';
+
+.AccordionTitle {
+  align-items: center;
+  color: $esGreen;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 30px;
+  text-decoration: none;
+
+  .Title {
+    margin-left: 15px;
+
+    &.Active {
+      font-weight: 700;
+    }
+  }
+
+  .Icon {
+    font-size: 14px !important;
+    font-weight: 900;
+  }
+}
+
+.Item {
+  display: block;
+  margin-left: 44px;
+  margin-top: 5px;
+  color: $nord0;
+  font-family: 'Roboto';
+  font-weight: 100;
+  text-decoration: none;
+
+  .Title {
+    &.Active {
+      font-weight: 400;
+    }
+  }
+}

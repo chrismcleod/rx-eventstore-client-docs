@@ -1,0 +1,17 @@
+{
+  "react.beautify.onSave": false,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.excludeLanguages": [
+    "typescript"
+  ],
+  "typescript.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "tslint.enable": true,
+  "tslint.autoFixOnSave": true,
+  "tslint.alwaysShowStatus": true,
+  "tslint.run": "onType",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+}

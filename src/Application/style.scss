@@ -1,0 +1,20 @@
+@import '../Core/Nord.scss';
+
+body {
+  background-color: $nord0;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 300;
+}
+
+#Application {
+  display: flex;
+  flex-direction: row;
+}
+
+#Sidebar {
+  flex: 0.2;
+}
+
+#Content {
+  flex: 0.8;
+}

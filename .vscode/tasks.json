@@ -1,0 +1,51 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "typescript",
+      "identifier": "tsc",
+      "tsconfig": "tsconfig.json",
+      "group": "build",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "type": "gulp",
+      "task": "watchAssets",
+      "identifier": "watchAssets",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "gulp",
+      "task": "assets",
+      "identifier": "assets",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "typescript",
+      "identifier": "tsc-watch",
+      "tsconfig": "tsconfig.json",
+      "option": "watch",
+      "group": "build",
+      "problemMatcher": [
+        "$tsc-watch"
+      ]
+    },
+    {
+      "type": "process",
+      "label": "watch",
+      "group": "build",
+      "dependsOn": [
+        "tsc-watch",
+        "assets",
+        "watchAssets"
+      ],
+      "isBackground": true
+    }
+  ]
+}

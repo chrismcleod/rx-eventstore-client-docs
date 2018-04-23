@@ -1,0 +1,12 @@
+@import '../Core/Nord.scss';
+
+#Content {
+  background-color: $nord6;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  .Docs {
+    flex: 1;
+  }
+}
